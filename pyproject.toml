@@ -1,0 +1,10 @@
+[project]
+name = "eansearch-mcp"
+version = "0.1.0"
+description = "A local MCP server for EAN-Search.org"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "eansearch>=1.8.3",
+    "mcp[cli]>=1.9.3",
+]

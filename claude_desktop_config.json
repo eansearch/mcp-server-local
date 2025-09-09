@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "c:\\Users\\Jan\\.local\\bin\\uv.exe",
+      "args": [
+        "--directory",
+        "c:\\Users\\Jan\\weather",
+        "run",
+        "weather.py"
+      ]
+    },
+    "eansearch": {
+      "command": "c:\\Users\\Jan\\.local\\bin\\uv.exe",
+      "args": [
+        "--directory",
+        "c:\\Users\\Jan\\eansearch-mcp",
+        "run",
+        "ean-search-mcp.py"
+      ],
+      "env": {
+        "EAN_SEARCH_API_TOKEN": "<your API key here>"
+      }
+    }
+  }
+}
