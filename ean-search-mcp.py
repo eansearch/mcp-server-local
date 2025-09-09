@@ -15,6 +15,8 @@ async def lookup_product(ean: str) -> str:
     Args:
         ean: barcode
     """
+    if not ean_search_api_token:
+        return "You need to set put your API token into the environment variable EAN_SEARCH_API_TOKEN. Get your API token from https://www.ean-search.org/ean-database-api.html"
     data = eansearch.barcodeLookup(ean)
     if not data:
         return "No product found."
@@ -27,6 +29,8 @@ async def find_products(keywords: str) -> str:
     Args:
         keywords: keywords to search for
     """
+    if not ean_search_api_token:
+        return "You need to set put your API token into the environment variable EAN_SEARCH_API_TOKEN. Get your API token from https://www.ean-search.org/ean-database-api.html"
     productlist = eansearch.productSearch(keywords)
 
     if not productlist:
