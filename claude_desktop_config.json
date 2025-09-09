@@ -1,19 +1,10 @@
 {
   "mcpServers": {
-    "weather": {
-      "command": "c:\\Users\\Jan\\.local\\bin\\uv.exe",
-      "args": [
-        "--directory",
-        "c:\\Users\\Jan\\weather",
-        "run",
-        "weather.py"
-      ]
-    },
     "eansearch": {
-      "command": "c:\\Users\\Jan\\.local\\bin\\uv.exe",
+      "command": "c:\\Users\\You\\.local\\bin\\uv.exe",
       "args": [
         "--directory",
-        "c:\\Users\\Jan\\eansearch-mcp",
+        "c:\\Users\\You\\eansearch-mcp",
         "run",
         "ean-search-mcp.py"
       ],
