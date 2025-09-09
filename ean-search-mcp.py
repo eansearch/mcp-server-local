@@ -17,10 +17,11 @@ async def lookup_product(ean: str) -> str:
     """
     if not ean_search_api_token:
         return "You need to set put your API token into the environment variable EAN_SEARCH_API_TOKEN. Get your API token from https://www.ean-search.org/ean-database-api.html"
+    ean = ean.strip()
     data = eansearch.barcodeLookup(ean)
     if not data:
         return "No product found."
-        return ean + " is product " + data
+    return ean + " is product " + data
 
 @mcp.tool()
 async def find_products(keywords: str) -> str:
